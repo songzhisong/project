@@ -58,6 +58,7 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 			acom[this.index].style.cssText = "display:block";
 		}
 	}
+	
 //	登录注册
 	
 	var msg = localStorage.getItem("loginUser");

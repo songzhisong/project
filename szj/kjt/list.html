@@ -7,8 +7,92 @@
     	<link rel="stylesheet" href="css/list.css" />
 	</head>
 	<body>
-		<div id="top"></div>
-		<header class="margin"></header>
+		<div id="top">
+			<div class="margin">
+	    		<div class="top-l">
+	    			<a href="#"><i class="bg i1"></i>收藏跨境通</a>
+	    			<a href="index.html"><i class="bg i2"></i>跨境通首页</a>
+	    			<i class="bg i3"></i>
+	    			<div class="service"><span>客服服务时间调整</span></div>
+	    		</div>
+	    		<div class="top-r">
+	    			<p class="deng"><a href="login.html">请登录</a>-<a href="register.html">免费注册</a></p>
+	    			<p class="deng2">您好，<a href="##" class="d1"></a> 欢迎光临跨境通 <a href="##" class="z1">退出</a></p>
+	    			<span>|</span>		
+	    			<a href="#">我的订单</a>
+	    			<span>|</span>
+	    			<div class="xia">    				
+						<a href="#">我的关注<i class="bg i4"></i></a>
+						<ul class="kuang">
+							<li><a href="#">商品关注</a></li>
+							<li><a href="#">店铺关注</a></li>
+						</ul>
+	    			</div>
+	    			<span>|</span>
+	    			<div class="xia">				
+		    			<a href="#">帮助中心<i class="bg i4"></i></a>
+		    			<ul class="kuang k2">
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">在线申请</a></li>
+							<li><a href="#">站点导航</a></li>
+						</ul>
+	    			</div>
+	    			<span>|</span>	
+	    			<div class="xia">				
+						<a href="#">商家入驻<i class="bg i4"></i></a>
+						<ul class="kuang k3">
+							<li><a href="#">跨境贸易入驻</a></li>
+							<li><a href="#">一般贸易入驻</a></li>
+						</ul>
+	    			</div>
+	    		</div>
+	    	</div>
+		</div>
+		<header class="margin">
+			<a href="#" class="logo"><img src="images/logo.png" /></a>
+			<div class="search">
+				<div class="search-t">
+					<div class="sou">
+						<ul class="xia1">
+							<li class="li1"><a href="#">商品</a><i class="bg i6"></i></li>						
+							<li class="li2 hidden"><a href="#">店铺</a></li>
+						</ul>
+						<input type="text" class="txt" placeholder="花王"/>
+					</div>
+					<a href="#" class="btn"><img src="images/search.png"/></a>
+				</div>
+				<div class="search-b">
+					<a href="#">花王</a>
+					<a href="#">Moony</a>
+					<a href="#">爽身粉</a>
+					<a href="#">纸尿裤</a>
+					<a href="#">奶粉</a>
+					<a href="#">护肤</a>
+					<a href="#">膳魔师</a>
+					<a href="#">高丝</a>
+					<a href="#">马油</a>
+					<a href="#">玫瑰露</a>
+					<a href="#">Ecoomat</a>
+					<a href="#">模型车</a>
+				</div>
+			</div>
+			<div class="QR-code">
+				<dl>
+					<dt>跨境通APP</dt>
+					<dd>坐拥全球</dd>
+					<dd>精品好货</dd>
+				</dl>
+				<div class="tu">				
+					<a href="#"><img src="images/kjtapp.jpg"/></a>
+					<img src="images/fd.jpg" class="fd"/>
+				</div>
+				
+			</div>
+			<a class="car" href="car.html">
+				<div class="num">0</div>
+				<p><i class="bg i5"></i>我的购物车</p>
+			</a>
+		</header>
 		<nav></nav>
 		
 		<div id="info">
@@ -63,7 +147,19 @@
 						</li>
 					</ul>
 				</div>
-				<div class="cont">
+				<div class="paixu">
+					<div class="pl">
+						<span>排序</span>
+						<a href="##">销量</a>
+						<a href="##">价格</a>
+						<a href="##">评论数</a>
+						<a href="##">上架时间</a>
+					</div>
+					<div class="pr">
+						<span>共<i id="shu"></i>个商品</span>
+					</div>
+				</div>
+				<div class="cont" id="list">
 						<!--<div class="box" qwe="${val.goodsId}">
 				            <img src="images/goods/list-1.jpg"/>
 				            <p>￥49.00</p>
@@ -72,6 +168,12 @@
 				            <i class="btn">加入购物车</i>
 				       </div>-->
 				</div>
+				<div class="pagWarp" id="pageWarp">
+			        <span id="btnL">上一页</span>
+			        <ul id="page">
+			        </ul>
+			        <span id="btnR">下一页</span>
+			    </div>
 			</div>
 		</div>
 		
