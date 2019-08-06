@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+.margin{width:1200px;margin:0 auto;}
+.bg{display:inline-block;background:url(../images/tu.png)  no-repeat;}
+.margin-s{width:1000px;margin:0 auto;}
+.login-icon{display:inline-block;background:url(../images/login-icon.png)  no-repeat;}
+
+header{height:107px;border-bottom:2px solid #e13358;}
+header .margin-s{display:flex;justify-content: space-between;}
+header a{display:block;}
+header a.logo{margin-top:30px;}
+header a.logo img{width:162px;height:50px;}
+header a.map{font:16px/104px "";color:#666;margin:3px 13px 0 0;}
+header a.map img{margin-right:10px;}
+
+main{height:582px;background:#f5f5f5;border-bottom:1px solid #f1f1f1;overflow:hidden;}
+main h3{font:18px/48px "";color:#000;margin-top:30px;}
+main .login{display:flex;}
+main .login .login-l{display:block;border-right:1px solid #f5f5f5;}
+main .login .login-l img{width:546px;height:418px;}
+main .login .login-r{background:#fff;flex:1;padding-left:50px;}
+main .login .login-r .user{width:350px;height:52px;border:1px solid #dedede;font:12px/52px "";margin-top:34px;}
+main .login .login-r .user span{color:#848484;margin-left:20px;}
+input::-webkit-input-placeholder{color:#ccc;}
+main .login .login-r .user .txt-u{border:0;height:51px;width:243px;padding:0 12px;}
+main .login .login-r .pass{width:350px;height:52px;border:1px solid #dedede;font:12px/52px "";border-top:0;}
+main .login .login-r .pass span{color:#848484;margin-left:20px;}
+main .login .login-r .pass .txt-p{border:0;height:51px;width:242px;padding:0 12px;}
+main .login .login-r .disan{}
+main .login .login-r .disan .btn{width:220px;height:48px;background:#e01841;border:0;font:24px/2 "";color:#fff;box-shadow: 0 0 5px #C82333;border-radius:8px;margin:22px 30px 0 0;}
+main .login .login-r .disan span{font:12px/62px "";color:#009ce8;margin-top:17px;}
+main .login .login-r .disan a{color:#009ce8;}
+main .login .login-r .disan a .zhuce{}
+main .login .login-r .disan a .forget{}
+main .login .login-r .partner{font:700 12px/50px "";color:#333;margin-top:6px;}
+main .login .login-r .contact{}
+main .login .login-r .contact i{margin-right:6px;}
+main .login .login-r .contact i.i1{width:32px;height:32px;}
+main .login .login-r .contact i.i2{width:32px;height:32px;background-position:-52px 0;}
+main .login .login-r .contact i.i3{width:32px;height:32px;background-position:-104px 0;}
+main .login .login-r .contact i.i4{width:32px;height:32px;background-position:-159px 0;}
+main .login .login-r .contact i.i1:hover{width:32px;height:32px;background-position:0 -56px;}
+main .login .login-r .contact i.i2:hover{width:32px;height:32px;background-position:-52px -56px;}
+main .login .login-r .contact i.i3:hover{width:32px;height:32px;background-position:-104px -56px;}
+main .login .login-r .contact i.i4:hover{width:32px;height:32px;background-position:-159px -56px;}
+main .login .login-r .state{font:16px/40px "";color:#000;margin-top:20px;}
+main .login .login-r .state a{color:#0062CC;}
+
+#footer{height:125px;text-align:center;font:12px/5 "";color:#999;border-top:1px solid #ebebeb;}
+#footer p.copyright a{color:#999;}
+#footer p.copyright a:hover{color:#e13358;}
+#footer p.icon{margin-top:3px;}
+
+
+
+
+
+
+
+
