@@ -36,7 +36,13 @@
 			})
 		}
 		load(){
-			$.ajax({
+			if(!this.user.val() && !this.pass.val()){
+				alert("用户名不能为空"+"\n"+"登录密码不能为空")
+			}else if(!this.user.val()){
+				alert("用户名不能为空")
+			}else if(!this.pass.val()){
+				alert("登录密码不能为空")
+			}else{$.ajax({
 				url:this.url,
 				data:{
 					type:"login",
@@ -60,7 +66,7 @@
 					}
 				}
 			})
-		}
+		}}
 		setState(){
 			localStorage.setItem("loginUser",JSON.stringify(this.res.msg));
 		}
