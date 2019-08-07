@@ -393,7 +393,8 @@ header {
         width: 100px;
         height: 30px;
         font: 14px/30px "";
-        color: #555; }
+        color: #555;
+        cursor: pointer; }
         #info .cont .box a:hover {
           color: #f00; }
   #info .pagWarp {

@@ -23,6 +23,9 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 		class List{
 			constructor(){
 				this.cont = document.querySelector(".cont");
+				this.he = 0;
+				$(".num").html(this.he);
+				
 				this.url = "http://localhost/test/szj/kjt/data/goods.json";
 				this.load();
 				this.addEvent();
@@ -43,17 +46,19 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 				this.res.forEach((val)=>{
 					str += `<div class="box" qwe="${val.goodsId}">
 					            <img src="${val.url}" alt="">
-					            <p>${val.price}</p>
+					            <p>￥${val.price}</p>
 					            <span>${val.name}</span>
 					            <em>${val.tip}</em>
 					            <a class="btn" href="car.html">加入购物车</a>
 					        </div>`;
 				});
+//				console.log(this.res);
 				this.cont.innerHTML = str;
+				
 				
 			}
 			addEvent(){
-				var that = this;                                                                                                                                                                 
+				var that = this;    
 				this.cont.addEventListener("click",function(eve){
 					if(eve.target.className == "btn"){
 						that.id = eve.target.parentNode.getAttribute("qwe");
@@ -86,6 +91,13 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 					}
 				}
 				setCookie("goods",JSON.stringify(this.goods));
+
+				for(var i in this.goods){
+					this.he += parseFloat(this.goods[i].num);
+					
+				}
+//				console.log(this.goods);
+				$(".num").html(this.he);
 			}
 		}
 		new List();
@@ -203,6 +215,6 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 			$(".deng2").hide();
 		})
 	
-		console.log($(".num"));
+//		console.log($(".num"));
 	
 })();

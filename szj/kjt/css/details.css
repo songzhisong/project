@@ -2,3 +2,19 @@
 
 .margin{width:1200px;margin:0 auto;}
 .bg{display:inline-block;background:url(../images/tu.png)  no-repeat;}
+
+
+main{height: 642px;background: #f5f5f5;}
+main .main-t{height: 40px;}
+main .main-t span{font-size: 12px;line-height: 40px;}
+main .main-t a{font-size: 12px;line-height: 40px;}
+main .main-t b{font-size: 12px;line-height: 40px;}
+main .main-t i{font-size: 12px;line-height: 40px;color: #CC1F1F;}
+
+main .main-b{height: 600px;}
+main .main-b .main-b-l{float: left;height: 600px;background: #fff;}
+main .main-b .main-b-l img{width: 450px;height: 450px;}
+
+
+main .main-b .main-b-r{width: 750px;background: #fff;height: 600px;float: left;}
+main .main-b .main-b-r-t{}

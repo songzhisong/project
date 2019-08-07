@@ -1,3 +1,5 @@
+;(function(){
+	
 $("#top").load("http://localhost/test/szj/kjt/public/public.html .bTop");
 $("header").load("http://localhost/test/szj/kjt/public/public.html .tou");
 $("nav").load("http://localhost/test/szj/kjt/public/public.html .daohang");
@@ -17,3 +19,5 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 		setInterval(function(){
 			notice()
 		},300)
+
+})();
