@@ -1,14 +1,19 @@
 
 //$("#top").load("http://localhost/test/szj/kjt/public/public.html .bTop");
-$("header").load("http://localhost/test/szj/kjt/public/public.html .tou");
+//$("header").load("http://localhost/test/szj/kjt/public/public.html .tou");
 $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 
 //	楼梯
 	$(function(){
-		$('.nav li').click(function(){
-	    	$(document).scrollTop($('.lou').eq($(this).index()).offset().top)
+			
+			$('.nav li').click(function(){
+		     // $(document).scrollTop($('.lou').eq($(this).index()).offset().top)
+			 var t =$('.lou').eq($(this).index());
+			 $("html").stop().animate({
+			     scrollTop:t.offset().top
+			 })	
+			})
 		})
-	})
 
 ;(function(){
 	
@@ -68,6 +73,10 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 		$(".deng").hide();
 		$(".deng2").show();
 		$(".deng2").find(".d1").html(JSON.parse(msg).user);
+		
+		$(".car a").on("click",function(){
+        	$(this).attr("href","car.html")
+        })
 	}else{
 		$(".deng").show();
 		$(".deng2").hide();
@@ -77,6 +86,7 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 		localStorage.removeItem("loginUser");
 		$(".deng").show();
 		$(".deng2").hide();
+		location.reload();
 	})
 	
 		var aimg = document.querySelectorAll("img");

@@ -119,4 +119,24 @@
 		}
 		
 		new Car;
+		
+		var msg = localStorage.getItem("loginUser");
+//		console.log(msg);
+		
+		if(msg){
+			$(".deng").hide();
+			$(".deng2").show();
+			$(".deng2").find(".d1").html(JSON.parse(msg).user);
+		}else{
+			$(".deng").show();
+			$(".deng2").hide();
+		}
+		
+		$(".deng2").find(".z1").click(function(){
+			localStorage.removeItem("loginUser");
+			$(".deng").show();
+			$(".deng2").hide();
+		})
+	
+//		console.log($(".num"));
 })();

@@ -6,7 +6,7 @@
 
 
 .nav{position: fixed;left: 50%;bottom: 60px;width: 50px;height:400px;background-position: 0 ;background: #F1F1F1;margin-left:582px ;opacity: .7; z-index: 999;}
-.nav li{font:10px/3 "";color: #333;width:50px;height:60px;text-align: center;}
+.nav li{font:10px/3 "";color: #333;width:50px;height:60px;text-align: center;cursor: pointer;}
 .nav li img{width:30px;height:30px;}
 
 
