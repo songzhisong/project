@@ -42,6 +42,7 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 						url:this.url,
 						success:function(res){
 							that.res= res
+//							that.getCookie()
 							that.display()
 						}
 					})
@@ -56,7 +57,7 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 					if(this.result == this.res[i].goodsId){
 //						console.log(this.res[i].name)
 						str1=`<div class="s_box">
-								<img src="${this.res[i].url}"/>
+								<img src="${this.res[i].url}" qwe="${this.res[i].goodsId}"/>
 							</div>
 							<div class="b_box">
 								<img src="${this.res[i].url}"/>
@@ -65,7 +66,7 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 							<a href="##"><i class="i3"></i></a>
 							<div class="tu">							
 								<img src="${this.res[i].url}"  class="fangda-s"/>
-								<img src="images/t2.jpg"  class="fangda-s"/>
+								<img src="images/t3.jpg"  class="fangda-s"/>
 								<img src="images/fangda-s.jpg"  class="fangda-s"/>
 								<img src="images/t1.jpg"  class="fangda-s"/>
 							</div>
@@ -99,6 +100,30 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 						this.addEvent();
 			}
 			addEvent(){
+				var that = this;
+				
+				this.btn1 = $(".btn1");
+//				console.log(this.btn1);
+				this.btn1.on("click",function(){
+					console.log(that.sImg.getAttribute("qwe"));
+					that.goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
+//					console.log(getCookie("goods"));
+					for(var i in that.goods){
+//						console.log(that.goods[i].id);
+//						if(that.goods[i].id === that.sImg.getAttribute("qwe")){
+////							console.log(1);
+//							that.changeCookie();
+//						}else{
+//							console.log(that.goods);
+//							setCookie("goods",JSON.stringify({"id":that.sImg.getAttribute("qwe")}));
+//							
+////							setCookie();
+//							console.log(that.goods);
+////							console.log(1);
+//						}
+					}
+				});
+				
 				this.sBox = document.querySelector(".s_box");
 				this.bBox = document.querySelector(".b_box");
 				this.oTu = document.querySelectorAll(".fangda-s");
@@ -118,7 +143,6 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 				
 				this.addEvent2();
 				
-				var that = this;
 				this.sBox.onmouseenter = function(){
 					that.show()
 				}
@@ -201,15 +225,66 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 				this.price[0].innerHTML = "￥"+this.sum*this.num;	
 
 			}
+//			changeCookie(){
+//				console.log(1);
+//				var n = JSON.parse(JSON.stringify(this.goods).slice(1,-1)).num
+//				n += parseInt($("s").html());
+//				console.log(n);
+//				setCookie("goods",JSON.stringify(this.goods));
+//				console.log(this.goods);
+//				
+//			}
 		}
 		
 		new Search();
 		
 		
 
-		
-		
-	
-//		console.log($(".num"));
-
 })();
+
+//addCar(){
+//  var that = this;
+//  this.oCar.on("click.abc", function(){
+//          that.goods = getCookie("goods") ? JSON.parse(getCookie("goods")) : [];
+//          if (that.goods.length == 0) {
+//              that.goods.push({
+//                  id: that.inf.goodsid,
+//                  num: 1
+//              })
+//              that.inf.num--;
+//          } else {
+//              var j;
+//              var onoff = that.goods.some((val, index) => {
+//                  j = index;
+//                  return val.id == that.inf.goodsid;
+//              })
+//              if (onoff) {
+//                  that.goods[j].num++;
+//                  that.inf.num--;
+//              } else {
+//                  that.goods.push({
+//                      id: that.inf.goodsid,
+//                      num: 1
+//                  })
+//                  that.inf.num--;
+//              }
+//          }
+//          var str3 = "";
+//          str3 += `${that.inf.num}`;
+//          that.box5.html(str3);
+//
+//
+//          console.log(that.goods);
+//          setCookie("goods", JSON.stringify(that.goods));
+//
+//          if (that.inf.num == 0) {
+//              that.oCar.off("click.abc");
+//              var mb = $("<p class = 'mb'>售罄</p>");
+//              $(this).parent(".details").prev(".imgBox").find(".table").find("img").after(mb);
+//          }
+//      } else {
+//          alert("请先登录！");
+//          location.href = "../html/log.html";
+//      }
+//  })
+//}

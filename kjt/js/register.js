@@ -43,7 +43,7 @@
 		}
 		ver(){
 			var that = this;
-			this.ouser.on("blur",function(){
+			this.ouser.on("input",function(){
 				that.uReg();
 			})
 			
@@ -51,7 +51,7 @@
 				that.pass1Reg();
 			})
 			
-			this.opass2.on("blur",function(){	
+			this.opass2.on("input",function(){	
 				that.pass2Reg();
 			})
 			

@@ -103,7 +103,6 @@
 						}
 					})
 				})
-				console.log(count);
 				this.tbody.innerHTML = str;
 				$(".total-pay").html(count);
 			}
