@@ -47,7 +47,7 @@ header .car i.i5{width:18px;height:17px;background-position:-15px 0;margin:0 6px
 header .car .num{width:18px;height:16px;border-radius:50%;background:#da2626;position:absolute;right:0;top:-7px;color:#fff;font:12px/16px "";text-align:center;}
 
 
-main{height: 1000px;background: #f5f5f5;}
+main{height: 660px;background: #f5f5f5;}
 main .main-t{height: 40px;}
 main .main-t p {font: 14px/40px "";color: #333;margin-top: 2px;display: flex; }
 main .main-t p a {display: block;margin: 0 6px; }
@@ -67,6 +67,8 @@ main .main-b .main-b-l .main-b-b i.i3{width:19px;height:26px;background-position
 main .main-b .main-b-l .main-b-b i.i4{width:19px;height:26px;background-position:-193px -88px;}
 main .main-b .main-b-l .main-b-b .tu{width:420px;height:78px;}
 main .main-b .main-b-l .main-b-b .tu .fangda-s{width:76px;height: 76px;border:1px solid #e42143;margin-left:6px;}
+
+
 main .main-b .main-b-l .friendsline{display:flex;align-items: center;margin:10px 0 0 30px;}
 main .main-b .main-b-l .friendsline i{display:inline-block;background:url(../images/shareicon.png) no-repeat left;margin-right:6px;}
 main .main-b .main-b-l .friendsline i.i5{width:16px;height:16px;background-position:0 -112px;}
@@ -90,13 +92,12 @@ main .main-b .main-b-r .addr .japan{display:block;width:32px;height:24px;backgro
 main .main-b .main-b-r .addr .japan:after{content:"";display:inline-block;width:12px;height:12px;background:#be0026;border-radius:50%;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
 main .main-b .main-b-r .amount{height:81px;border-bottom:1px dashed #e3e3e3;padding-left:40px;font:14px/32px "";color:#444444;}
 main .main-b .main-b-r p{margin-top:5px;}
-/*main .main-b .main-b-r .amount-t p{width:68px;height:30px;border:1px solid #cecbce;}*/
 main .main-b .main-b-r .amount-t{display:flex;}
 main .main-b .main-b-r .amount-t p{margin:0 6px 0 0;display:flex;align-items: center;}
 main .main-b .main-b-r .amount-t p input{width:30px;height:30px;font-size:16px;border:none;}
 main .main-b .main-b-r .amount-t p s{display:block;width:30px;height:30px;border:1px solid #ddd;text-align: center;margin:0 4px;}
 main .main-b .main-b-r .amount-t i{font:12px/3 "";color:#c40000;}
-main .main-b .main-b-r .money{font:14px/32px "";color:#444444;padding-left:40px;border-bottom:1px dashed #e3e3e3;}
+main .main-b .main-b-r .money{font:14px/60px "";color:#444444;padding-left:40px;border-bottom:1px dashed #e3e3e3;height:60px;}
 main .main-b .main-b-r .money u{color:#da2626;}
 main .main-b .main-b-r .btn{height:333px;padding:20px 0 0 40px;display:flex;}
 main .main-b .main-b-r .btn a{display:block;margin-right:10px;}
@@ -105,4 +106,3 @@ main .main-b .main-b-r .btn a i.i1{width:182px;height:44px;background-position:0
 main .main-b .main-b-r .btn a i.i1:hover{background-position:0 -125px;}
 main .main-b .main-b-r .btn a i.i2{width:102px;height:44px;background-position:0 -169px;}
 main .main-b .main-b-r .btn a i.i2:hover{background-position:0 0;}
-main .xq{width:400px;height:400px;margin:0 auto;}
