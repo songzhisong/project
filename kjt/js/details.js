@@ -86,6 +86,9 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 					$(".deng").hide();
 					$(".deng2").show();
 					$(".deng2").find(".d1").html(JSON.parse(this.msg).user);
+//					$(".car a").on("click",function(){
+//      			$(this).attr("href","car.html")
+//      		})
 				}else{
 					$(".deng").show();
 					$(".deng2").hide();
@@ -95,6 +98,8 @@ $("#footer").load("http://localhost/test/szj/kjt/public/public.html .footer");
 					localStorage.removeItem("loginUser");
 					$(".deng").show();
 					$(".deng2").hide();
+//					location.reload();
+					
 				})
 						
 						this.addEvent();

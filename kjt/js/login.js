@@ -56,7 +56,6 @@
 						this.state.html("用户名不存在，请<a href='register.html'>注册</a>");
 					}else if(this.res.code == 1){
 						this.setState();
-						
 						this.state.html("登录成功，3秒后跳转<a href='index.html'>首页</a>");
 						setTimeout(()=>{
 							location.href = "index.html";
